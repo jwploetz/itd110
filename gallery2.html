@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Some Pictures I Took</title>
+</head>
+<body>
+    <h1>Some Pictures I Took</h1>
+    <!--is it ok there are files not links? if they should be links, where do i host it?-->
+    <p><img src="images/badlands.jpg" alt="A silhouette of the badlands against the sunset"></p>
+    <p><img src="images/flower.jpg" alt="A flower with an inchworm resting on it"></p>
+    <p><img src="images/sqirrel.jpg" alt="a really cool sqirrel"></p>
+    <p><img src="images/lake.jpg" alt="real life bob ross painting"></p>
+    <p><img src="images/reflection.jpg" alt="another real life bob ross painting"></p>
+    
+	<footer id="vLinks" style="text-align: center;">
+	</footer>
+	
+	<script>
+		var loc = window.location.href;
+		
+		var linkStr = '<a href="http://validator.w3.org/check?uri=';
+		linkStr += loc;
+		linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
+		linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
+		linkStr += loc;
+		linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
+		console.log(linkStr);
+		
+		var footer = document.getElementById("vLinks");
+		console.log(footer);
+		footer.innerHTML = linkStr;
+	</script>
+</body>
+</html>
