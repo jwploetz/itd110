@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Some Pictures I Like</title>
+</head>
+<body>
+    <h1>Some Pictures I like</h1>
+    <p><img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/scifi/large/seaworld.jpg" alt="Sea World"></p>
+    <p><img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/ibart/large/five_pillars.jpg" alt="Five Pillars"></p>
+    <p><img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/fantasy/large/sub.jpg" alt="Sub"></p>
+    <p><img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/fantasy/large/clownland.jpg" alt="Clown Land"></p>
+    <p><img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/fantasy/large/lucifer.jpg" alt="lucifer"></p>
+
+    
+	<footer id="vLinks" style="text-align: center;">
+	</footer>
+	
+	<script>
+		var loc = window.location.href;
+		
+		var linkStr = '<a href="http://validator.w3.org/check?uri=';
+		linkStr += loc;
+		linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
+		linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
+		linkStr += loc;
+		linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
+		console.log(linkStr);
+		
+		var footer = document.getElementById("vLinks");
+		console.log(footer);
+		footer.innerHTML = linkStr;
+	</script>
+</body>
+</html>
