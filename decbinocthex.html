@@ -26,9 +26,24 @@
         <tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
         <tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
     </table>
+
+    <footer id="vLinks" style="text-align: center;">
+    </footer>
+      
+    <script>
+        var loc = window.location.href;
+        
+        var linkStr = '<a href="http://validator.w3.org/check?uri=';
+        linkStr += loc;
+        linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
+        linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
+        linkStr += loc;
+        linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
+        console.log(linkStr);
+        
+        var footer = document.getElementById("vLinks");
+        console.log(footer);
+        footer.innerHTML = linkStr;
+    </script>
 </body>
-<footer style="text-align: center;">
-	<a href="http://validator.w3.org/check/referer">
-	<strong> HTML </strong> Valid! </a>
-</footer>
 </html>
