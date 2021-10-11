@@ -1,119 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>howdy buckaroos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>howdy buckaroos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!--is there a cleaner way to do the nav bar?-->
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 1
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="minimal_page.html">Minimal Page</a>
-        <a href="index.html">Index</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 2
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="gdw.html">GDW</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 3
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="block.html">Block-level Elements</a>
-        <a href="inline.html">Inline Elements</a>
-        <a href="objects.html">Object Elements</a>
-        <a href="special.html">Special Characters</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 4
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="unordered.html">Unordered List</a>
-        <a href="orderd.html">Ordered List</a>
-        <a href="description.html">Description List</a>
-        <a href="learning_webdev.html">Learning Web Development</a>
+    <ul id="menuBar" class="dropdownMenu">
+    </ul>
 
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 5
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="decbinocthex.html">Number Types Table</a>
-        <a href="mytable.html">Courses Table</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 6
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="favorite.html">My Favorite Web Sites</a>
-        <a href="gdw.html">GDW</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 7
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="gallery1.html">Gallery I</a>
-        <a href="gallery2.html">Gallery II</a>
-      </div>
-      
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Lesson 8
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="forms1.html"></a>
-        <a href="forms2.html"></a>
-        <a href="forms3.html"></a>
-        <a href="forms4.html"></a>
-      </div>
-    </div>
-  </div>
-  <h1>howdy buckaroos</h1>
+    <h1>howdy buckaroos</h1>
 
-  <h2>Classwork</h2>
+    <h2>Classwork</h2>
     <p>it will be here soon, dont worry</p>
     <p>nav bar will soon be on all pages</p>
 
 
     <footer id="vLinks" style="text-align: center;">
+        <script src="js/footer.js"></script>
     </footer>
-      
-    <script>
-        var loc = window.location.href;
-        
-        var linkStr = '<a href="http://validator.w3.org/check?uri=';
-        linkStr += loc;
-        linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
-        linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
-        linkStr += loc;
-        linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
-        console.log(linkStr);
-        
-        var footer = document.getElementById("vLinks");
-        console.log(footer);
-        footer.innerHTML = linkStr;
-    </script>
+
+    <script src="js/nav_bar.js"></script>
+
 </body>
 </html>
 

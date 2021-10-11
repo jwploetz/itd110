@@ -5,6 +5,9 @@
     <title>Some Pictures I Like</title>
 </head>
 <body>
+	<ul id="menuBar" class="dropdownMenu">
+    </ul>
+	
     <h1>Some Pictures I Like</h1>
     <!--Do the images need to be in the p tags? that was in your example but it seems redundant. Is it for formatting?-->
     <p><img src="http://www.openbookproject.net/multimedia/paulcardunergraphics/scifi/large/seaworld.jpg" alt="Sea World"></p>
@@ -15,22 +18,9 @@
 
     
 	<footer id="vLinks" style="text-align: center;">
+		<script src="js/footer.js"></script>
 	</footer>
-	
-	<script>
-		var loc = window.location.href;
-		
-		var linkStr = '<a href="http://validator.w3.org/check?uri=';
-		linkStr += loc;
-		linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
-		linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
-		linkStr += loc;
-		linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
-		console.log(linkStr);
-		
-		var footer = document.getElementById("vLinks");
-		console.log(footer);
-		footer.innerHTML = linkStr;
-	</script>
+	  
+	<script src="js/nav_bar.js"></script>
 </body>
 </html>

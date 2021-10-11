@@ -1,52 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <title>Getting Down with HTML Exercises</title>
-        <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Getting Down with HTML Exercises</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h1>Getting Down with HTML Exercises</h1>
-        <h2>Elements</h2>
-                <h3><a href="block.html">Block-level Elements</a></h3>
-                <h3><a href="inline.html">Inline Elements</a></h3>
-                <h3><a href="objects.html">Object Elements</a></h3>
-                <h3><a href="special.html">Special Characters</a></h3>
-        <h2>Lists</h2>
-                <h3><a href="orderd.html">Ordered </a></h3>
-                <h3><a href="unordered.html">Unordered </a></h3>
-                <h3><a href="description.html">Definition</a></h3>
-        <h2>Tables</h2>
-                <h3><a href="decbinocthex.html">Number Types Table</a></h3>
-                <h3><a href="mytable.html">Courses Table</a></h3>
-        <h2>Links</h2>
-                <h3><a href="favorite.html">Favorite Websites</a></h3>
-        <h2>Images</h2>
-                <h3><a href="gallery1.html">Gallery I</a></h3>
-                <h3><a href="gallery2.html">Gallery II</a></h3>
-        <h2>Forms</h2>
-                <h3><a href="forms1.html">Form I</a></h3>
-                <h3><a href="forms2.html">Form II</a></h3>
-                <h3><a href="forms3.html">Form III</a></h3>
-                <h3><a href="forms4.html">Form IV</a></h3>
+    <ul id="menuBar" class="dropdownMenu">
+    </ul>
+    
+    <h1>Getting Down with HTML Exercises</h1>
+    <h2>Elements</h2>
+        <h3><a href="block.html">Block-level Elements</a></h3>
+        <h3><a href="inline.html">Inline Elements</a></h3>
+        <h3><a href="objects.html">Object Elements</a></h3>
+        <h3><a href="special.html">Special Characters</a></h3>
+    <h2>Lists</h2>
+        <h3><a href="orderd.html">Ordered </a></h3>
+        <h3><a href="unordered.html">Unordered </a></h3>
+        <h3><a href="description.html">Definition</a></h3>
+    <h2>Tables</h2>
+        <h3><a href="decbinocthex.html">Number Types Table</a></h3>
+        <h3><a href="mytable.html">Courses Table</a></h3>
+    <h2>Links</h2>
+        <h3><a href="favorite.html">Favorite Websites</a></h3>
+    <h2>Images</h2>
+        <h3><a href="gallery1.html">Gallery I</a></h3>
+        <h3><a href="gallery2.html">Gallery II</a></h3>
+    <h2>Forms</h2>
+        <h3><a href="forms1.html">Form I</a></h3>
+        <h3><a href="forms2.html">Form II</a></h3>
+        <h3><a href="forms3.html">Form III</a></h3>
+        <h3><a href="forms4.html">Form IV</a></h3>
 
-        <footer id="vLinks" style="text-align: center;">
-        </footer>
-          
-        <script>
-                var loc = window.location.href;
-                
-                var linkStr = '<a href="http://validator.w3.org/check?uri=';
-                linkStr += loc;
-                linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
-                linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
-                linkStr += loc;
-                linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
-                console.log(linkStr);
-                
-                var footer = document.getElementById("vLinks");
-                console.log(footer);
-                footer.innerHTML = linkStr;
-        </script>
+    <footer id="vLinks" style="text-align: center;">
+        <script src="js/footer.js"></script>
+    </footer>
+                      
+    <script src="js/nav_bar.js"></script>
 </body>
 </html>

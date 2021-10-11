@@ -5,6 +5,9 @@
     <title>Learning Web Dev</title>
 </head>
 <body>
+    <ul id="menuBar" class="dropdownMenu">
+    </ul>
+    
     <h1>Learning Web Dev</h1>
     <ol type="I">
         <li>Background Skills
@@ -66,22 +69,9 @@
     </ol>
 
     <footer id="vLinks" style="text-align: center;">
+        <script src="js/footer.js"></script>
     </footer>
-      
-    <script>
-        var loc = window.location.href;
-        
-        var linkStr = '<a href="http://validator.w3.org/check?uri=';
-        linkStr += loc;
-        linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
-        linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
-        linkStr += loc;
-        linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
-        console.log(linkStr);
-        
-        var footer = document.getElementById("vLinks");
-        console.log(footer);
-        footer.innerHTML = linkStr;
-    </script>
+                      
+    <script src="js/nav_bar.js"></script>
 </body>
 </html>

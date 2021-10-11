@@ -5,6 +5,9 @@
     <title>Object Elements</title>
 </head>
 <body>
+    <ul id="menuBar" class="dropdownMenu">
+    </ul>
+    
     <p>this text is simply for playing with br and hr, ignore its contents like C++ ignores whitespace</p>
     <hr>
     <hr>
@@ -15,22 +18,9 @@
     <p>the hr tag adds a horizontal line, and br adds a line break</p>
 
     <footer id="vLinks" style="text-align: center;">
+        <script src="js/footer.js"></script>
     </footer>
-      
-    <script>
-        var loc = window.location.href;
-        
-        var linkStr = '<a href="http://validator.w3.org/check?uri=';
-        linkStr += loc;
-        linkStr += '">\n<strong> HTML </strong> Valid! </a> |';
-        linkStr +=' <a href="http://jigsaw.w3.org/css-validator/validator?uri='
-        linkStr += loc;
-        linkStr += '?profile=css3">\n<strong> CSS </strong> Valid! </a>'
-        console.log(linkStr);
-        
-        var footer = document.getElementById("vLinks");
-        console.log(footer);
-        footer.innerHTML = linkStr;
-    </script>
+                      
+    <script src="js/nav_bar.js"></script>
 </body>
 </html>
