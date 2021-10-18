@@ -22,6 +22,10 @@ var menuStr =
     <a href="`+directoryDepth+`/lessons/favorite.html">Favorite Websites</a>
     <a href="`+directoryDepth+`/lessons/gallery1.html">Gallery I</a>
     <a href="`+directoryDepth+`/lessons/gallery2.html">Gallery II</a>
+    <a href="`+directoryDepth+`/lessons/forms1.html">Form 1</a>
+    <a href="`+directoryDepth+`/lessons/forms2.html">Form 2</a>
+    <a href="`+directoryDepth+`/lessons/forms3.html">Form 3</a>
+    <a href="`+directoryDepth+`/lessons/forms4.html">Form 4</a>
   </div>
 </li>
 <li class="dropdown">
