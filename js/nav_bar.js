@@ -5,7 +5,7 @@ directoryDepth = ".".repeat(window.location.href.replace(/[^/A]/g, "").length-2)
 var menuStr =
 `<li class="dropdownButton"><a href="`+directoryDepth+`/index.html">Home</a></li>
 <li class="dropdown">
-  <a href="javascript:void(0)" class="dropbtn">Lessons</a>
+  <a href="javascript:void(0)" class="dropbtn">Lessons 1-4</a>
   <div class="dropdown-content">
     <a href="`+directoryDepth+`/lessons/minimal_page.html">Minimal Page</a>
     <a href="`+directoryDepth+`/lessons/gdw.html">Getting Down With HTML</a>
@@ -17,6 +17,11 @@ var menuStr =
     <a href="`+directoryDepth+`/lessons/ordered.html">Ordered Lists</a>
     <a href="`+directoryDepth+`/lessons/description.html">Description Lists</a>
     <a href="`+directoryDepth+`/lessons/learning_webdev.html">Learning Web Dev</a>
+  </div
+</li>
+<li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Lessons 5-8</a>
+  <div class="dropdown-content">
     <a href="`+directoryDepth+`/lessons/decbinocthex.html">Number Types Table</a>
     <a href="`+directoryDepth+`/lessons/mytable.html">Courses Table</a>
     <a href="`+directoryDepth+`/lessons/favorite.html">Favorite Websites</a>
