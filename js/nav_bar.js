@@ -36,7 +36,10 @@ var menuStr =
 <li class="dropdown">
   <a href="javascript:void(0)" class="dropbtn">Other Links</a>
   <div class="dropdown-content">
+    <a href="https://ciw.jackploetz.com" target="_blank">CIW Labs</a>
+    <a href="https://jwploetz.github.io/ciw/" target="_blank">CIW GitHub Repo</a>
     <a href="https://github.com/jwploetz/jwploetz.github.io" target="_blank">Website GitHub Repo</a>
+    <a href="https://koibots.com" target="_blank"> KoiBots Website</a>
     <a href="https://ict.gctaa.net/sections/webdesign/students.html" target="_blank">Other Websites</a>
     <a href="http://www.openbookproject.net/tutorials/getdown/index.html" target="_blank">Getting Down With Series</a>
     <a href="https://en.wikipedia.org/wiki/special:random" target="_blank">Random Wikipedia Page</a>
