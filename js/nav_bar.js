@@ -34,6 +34,12 @@ var menuStr =
   </div>
 </li>
 <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Experiments</a>
+  <div class="dropdown-content">
+    <a href="`+ directoryDepth + `/experiments/navidad/index.html">Navidad</a>
+  </div>
+</li>
+<li class="dropdown">
   <a href="javascript:void(0)" class="dropbtn">Other Links</a>
   <div class="dropdown-content">
     <a href="https://ciw.jackploetz.com" target="_blank">CIW Labs</a>
