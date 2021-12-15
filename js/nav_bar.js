@@ -1,6 +1,6 @@
 //Thanks Alex for the navbar help
 
-directoryDepth = ".".repeat(window.location.href.replace(/[^/A]/g, "").length-2)
+directoryDepth = "../".repeat(window.location.href.replace(/[^/A]/g, "").length-2)
 
 var menuStr =
 `<li class="dropdownButton"><a href="`+directoryDepth+`/index.html">Home</a></li>
