@@ -5,6 +5,12 @@
 var menuStr =
 `<li class="dropdownButton"><a href="/index.html">Home</a></li>
 <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Head First JS</a>
+  <div class="dropdown-content">
+    <a href="/headFirst/playlist.html">Playlist</a>
+  </div
+</li>
+<li class="dropdown">
   <a href="javascript:void(0)" class="dropbtn">Lessons 1-4</a>
   <div class="dropdown-content">
     <a href="/lessons/minimal_page.html">Minimal Page</a>
