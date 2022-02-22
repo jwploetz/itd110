@@ -20,3 +20,23 @@ function createSticky() {
 
     addStickyToDOM(value);
 }
+
+
+function addStickyToDOM(value) {
+    var stickies = document.getElementById("stickies");
+    var sticky = document.createElement("li");
+    var span = document.createElement("span");
+    span.setAttribute("class", "sticky");
+    span.innerHTML = value;
+    sticky.appendChild(span);
+    stickies.appendChild(sticky);
+}
+
+function clearStickyNotes() {
+    localStorage.clear();
+    var stickyList = document.getElementById("stickies");
+    var stickies = stickyList.childNodes;
+    for (var i = stickies.length - 1; i >= 0; i--) {
+        stickyList.removeChild(stickies[i]);
+    }
+}
