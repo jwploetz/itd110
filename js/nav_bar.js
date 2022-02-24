@@ -7,7 +7,8 @@ var menuStr =
 <li class="dropdown">
   <a href="javascript:void(0)" class="dropbtn">Head First JS</a>
   <div class="dropdown-content">
-    <a href="/headFirst/playlist.html">Webville Tunes</a>
+    <a href="/headFirst/playlist/playlist.html">Webville Tunes</a>
+    <a href="/headFirst/sticky/notetoself.html>Note To Self
   </div
 </li>
 <li class="dropdown">
