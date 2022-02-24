@@ -5,17 +5,25 @@
     <title>Note to Self</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="data.css">
-    <script>
-        localStorage.setItem("sticky_0", "Pick up dry cleaning");
-        localStorage.setItem("sticky_1", "Cancel cable tv, who needs it now?");
-        var stickyValue = localStorage.getItem("sticky_0");
-        alert(stickyValue);
-    </script>
+    <script>src = "notetoself.js" ></script>
 </head>
 
 <body>
+    <form>
+        <label for="note_color">Color: </label>
+        <select id="note_color">
+            <option value="LightGoldenRodYellow">yellow</option> <!-- #FAFAD2 -->
+            <option value="PaleGreen">green</option> <!-- #98FB98 -->
+            <option value="LightPink">pink</option> <!-- #FFB6C1 -->
+            <option value="LightBlue">blue</option> <!-- #ADD8E6 -->
+        </select>
+        <label for="note_text">Text:</label> <input type="text" id="note_text">
+        <input type="button" id="add_button" value="Add Sticky Note to Self">
+        <input type="button" id="clear_button" value="Clear all Sticky Notes
+    </form>
 
-    <ul id="menuBar" class="dropdownMenu"></ul>
+    <ul id="stickies">
+    </ul>
     
     <footer id="vLinks" style="text-align: center;">
         <script src="/js/footer.js"></script>
